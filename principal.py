@@ -74,11 +74,11 @@ while True:
 
                                 print(f'Nome: {pessoa["nome"]}')
                                 print(f'Cargo: {pessoa["cargo"]}')
-                                print(f'matricula:{pessoa["matricula"]}')
-                                print(f'CPF:{pessoa["cpf"]}')
+                                print(f'matricula:\033[36m{pessoa["matricula"]}\033[m')
+                                print(f'CPF:\033[36m{pessoa["cpf"]}\033[m')
                                 print(f'Salário: R$ {pessoa["salario"]:.2f}')
                                 encontrou=True
-                                break
+                                
 
                          if not encontrou:
                              print("funcionario não encontrado")
